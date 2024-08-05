@@ -1,0 +1,49 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 4487953,
+  "description": "",
+  "download_checksums": {
+    "/Users/thomaswinterburn/src/wondercs/introduction_examples/berean_study_bible.csv": {
+      "num_bytes": 4381291,
+      "checksum": null
+    }
+  },
+  "download_size": 4381291,
+  "features": {
+    "verse": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "embeddings": {
+      "feature": {
+        "dtype": "float32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 8869244,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4487953,
+      "num_examples": 31102,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

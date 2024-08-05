@@ -1,0 +1,6 @@
+My first file written from Python
+#---------------------------------#
+Hello, world!
+This is a snake string
+Maybe we can get more things to show up
+SNAKE snake SNAKE

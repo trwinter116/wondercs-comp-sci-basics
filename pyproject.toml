@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "wonder-comp-sci-basics"
+version = "1.0.0"
+description = "The Wonder Into to Computer Science Curriculum Python Files"
+authors = ["Thomas Winterburn <thomas.winterburn2@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+datasets = "^2.16.0"
+transformers = "^4.36.2"
+pygame = "^2.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.27.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

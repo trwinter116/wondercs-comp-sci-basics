@@ -1,0 +1,6 @@
+0001 My first file written from Python
+0002 #---------------------------------#
+0003 Hello, world!
+0004 This is a snake string
+0005 Maybe we can get more things to show up
+0006 SNAKE snake SNAKE
