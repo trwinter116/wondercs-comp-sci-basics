@@ -1,8 +1,8 @@
 # %%
 def final_amt(p, r, n, t):
     """
-    Apply the compund interest formula to p
-      to produce the final amount.
+    Apply the compound interest formula to p
+    to produce the final amount.
     """
 
     return p * (1 + r / n) ** (n * t)
