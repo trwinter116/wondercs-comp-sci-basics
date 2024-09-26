@@ -1,5 +1,5 @@
 # %%
-from test import test
+from test_helper import test
 
 
 class Point:
@@ -21,11 +21,18 @@ class Point:
         y = (self.y + p2.y) / 2
         return Point(x, y)
 
+    # *** WRITE REFLECT_X CODE HERE ***
+
+    # *** WRITE SLOPE_FROM_ORIGIN CODE HERE ***
+
 
 # Exercise 1
 # Write a function which calculates the distance between two points
 def distance(p1: Point, p2: Point):
-    pass
+
+    # *** WRITE YOUR CODE HERE ***
+
+    return
 
 
 p1 = Point(2, 3)

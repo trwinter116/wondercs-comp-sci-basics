@@ -1,4 +1,4 @@
-from test import test
+from test_helper import test
 
 
 class MyTime:

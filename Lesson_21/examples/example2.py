@@ -4,28 +4,18 @@ class MyTime:
     def __init__(self, hrs=0, mins=0, secs=0):
         """ Create a MyTime object initialized to hrs, mins, secs """
 
-        total_seconds = (hrs * 3600) + (mins * 60) + secs
-        self.hours = total_seconds // 3600
-        remaining_time = total_seconds % 3600
-        self.minutes = remaining_time // 60
-        self.seconds = remaining_time % 60
+        self.hours = hrs
+        self.minutes = mins
+        self.seconds = secs
 
     def __str__(self) -> str:
         return f"{self.hours:02d}:{self.minutes:02d}:{self.seconds:02d}"
 
     def increment(self, secs):
-        self.seconds += secs
-
-        while self.seconds >= 60:
-            self.seconds -= 60
-            self.minutes += 1
-
-        while self.minutes >= 60:
-            self.minutes -= 60
-            self.hours += 1
+        pass
 
     def to_seconds(self):
-        return (self.hours * 3600) + (self.minutes * 60) + self.seconds
+        pass
 
 
 # %%

@@ -31,7 +31,7 @@ def recursion_depth(number):
     print("Recursion depth number", number)
     try:
         if number == 100:
-            recursion_depth( number + "stringy")
+            recursion_depth(f"{number}stringy")
         else:
             recursion_depth(number + 1)
     except RecursionError:
@@ -41,5 +41,17 @@ def recursion_depth(number):
 
 
 recursion_depth(0)
+
+# %%
+def get_age():
+    age = int(input("Please enter your age: "))
+
+    if age < 0:
+        raise ValueError(f"{age} is not a valid age.")
+
+    return age
+
+# %%
+get_age()
 
 # %%

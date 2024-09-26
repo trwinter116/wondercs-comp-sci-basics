@@ -25,16 +25,27 @@ def crawl_files(path):
         if os.path.isdir(fullname):
             crawl_files(fullname)
         else:  # Do something useful with the file
-            print("{0:30} {1}".format(f, fullname))
+            #print("{0:30} {1}".format(f, fullname))
 
             # Part 2
             # Write code to normalize the filename, and either append the path to a global
             # dictionary for that file name, or create a new entry.
+            key = f.lower()  # Normalize the filename
+            if key in files_dict:
+                files_dict[key].append(fullname)
+            else:   # insert the key and a list of one pathname
+                files_dict[key] = [fullname]
 
             # Part 3
             # Write code here to display a progress bar, for every 100 files print a "."
             # with no line breaks after it. For every 5000 files, create a new line with
             # an empty print..
+            file_count += 1
+            if file_count % 100 == 0:
+                print(".", end="")
+                if file_count % 5000 == 0:
+                    print()
+
 
 
 crawl_files(Path.cwd().parent.parent)
@@ -86,3 +97,4 @@ query("base_game.py")
 query("README1.md")
 
 # %%
+

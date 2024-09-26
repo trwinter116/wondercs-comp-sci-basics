@@ -29,11 +29,10 @@ class MyTime:
 
     def after(self, time2):
         """ Return True if I am strictly greater than time2 """
-        return self.to_seconds() > time2.to_seconds()
+        pass
 
     def __add__(self, time2):
-        total_seconds = self.to_seconds() + time2.to_seconds()
-        return MyTime(0, 0, total_seconds)
+        pass
 
 
 # %%

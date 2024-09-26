@@ -4,7 +4,7 @@ import turtle
 def draw_bar(t, height):
     """ Get turtle t to draw one bar, of height. """
 
-    # Start of onditional height check
+    # Start of conditional height check
     if height >= 200:
         t.fillcolor("red")
     elif height > 100:

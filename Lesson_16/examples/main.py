@@ -31,14 +31,9 @@ class Rectangle:
     def __str__(self):
         return "({0}, {1}, {2})".format(self.corner, self.width, self.height)
 
-    def grow(self, delta_width, delta_height):
-        self.width += delta_width
-        self.height += delta_height
+    # Part 2 implement grow method here.
 
-    def move(self, delta_x, delta_y):
-        new_x = self.corner.x + delta_x
-        new_y = self.corner.y + delta_y
-        self.corner = Point(new_x, new_y)
+    # Part 3 implement move method here.
 
 
 # %%
@@ -53,9 +48,14 @@ box.height += 100
 print(f"box: {box}")
 
 # %%
+# Demo Part 2
 r = Rectangle(Point(10, 5), 100, 50)
 print(r)
 r.grow(25, -10)
+print(r)
+
+# %%
+# Demo Part 3
 print(r)
 r.move(-10, 10)
 print(r)

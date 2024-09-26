@@ -1,5 +1,5 @@
 # %%
-from test import test
+from test_helper import test
 
 
 def r_max(nxs):

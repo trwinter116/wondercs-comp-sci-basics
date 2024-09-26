@@ -20,7 +20,7 @@ with open("test.txt", "r") as mynewhandle:
 # %%
 content = pathlib.Path("test.txt").read_text()
 words = content.split()
-print("There are {0} words in the file.".format(len(words)))
+print(f"There are {len(words)} words in the file.")
 
 
 # %%

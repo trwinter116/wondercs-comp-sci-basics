@@ -1,4 +1,5 @@
-from test import test
+# %%
+from test_helper import test
 
 
 class Card:
@@ -44,7 +45,7 @@ class Card:
     def __ne__(self, other):
         return self.cmp(other) != 0
 
-
+# %%
 # Exercise 1
 # Currently if you compare an Ace, it will rank lower than 2. For most card games however,
 # an Ace ranks higher than a king. Modify the cmp class method so that Ace ranks higher than a king

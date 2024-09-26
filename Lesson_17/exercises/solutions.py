@@ -362,7 +362,16 @@ def main(winstyle=0):
             player.kill()
 
 
-        # *** WRITE YOUR ALIEN COLLISION LOGIC HERE ***
+        # ! ALIEN COLLISION LOGIC HERE !
+
+        for alien1 in aliens:
+            other_aliens = pg.sprite.Group([a for a in aliens if a != alien1])
+            for alien2 in pg.sprite.spritecollide(alien1, other_aliens, 1):
+                Explosion(alien1, all)
+                Explosion(alien2, all)
+                alien1.kill()
+
+        # ! ALIEN COLLISION LOGIC HERE !
 
 
         # See if shots hit the aliens.

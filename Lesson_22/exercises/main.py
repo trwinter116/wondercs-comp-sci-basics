@@ -1,4 +1,4 @@
-from test import test
+from test_helper import test
 
 
 class MyTime:
@@ -38,7 +38,7 @@ class MyTime:
     def __gt__(self, *args):
         pass
 
-
+# %%
 # Exercise 1:
 # Write a Boolean method "between" that takes two MyTime objects, t1 and t2, as
 # arguments, and returns True if the invoking object falls between the two times.

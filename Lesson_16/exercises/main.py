@@ -1,5 +1,5 @@
 # %%
-from test import test
+from test_helper import test
 
 
 class Point:
@@ -41,6 +41,12 @@ class Rectangle:
     def move(self, dx, dy):
         self.corner.x += dx
         self.corner.y += dy
+
+    # *** WRITE YOUR AREA CODE HERE ***
+
+    # *** WRITE YOUR PERIMETER CODE HERE ***
+
+    # *** WRITE YOUR FLIP CODE HERE ***
 
 
 # %%

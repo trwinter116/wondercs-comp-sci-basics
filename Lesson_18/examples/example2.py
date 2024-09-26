@@ -1,5 +1,5 @@
 # %%
-from test import test
+from test_helper import test
 
 #print(sum([1,2 ,3 ,4]))
 print(sum([2, 9, [1, 13], 8, 6]))
