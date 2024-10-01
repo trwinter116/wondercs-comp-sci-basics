@@ -12,6 +12,12 @@ print(sum_to(10))
 
 
 # %%
+
+# An interesting question was first posed by a German mathematician called Lothar Collatz:
+# the Collatz conjecture (also known as the 3n + 1 conjecture), is that this sequence
+# terminates for all positive values of n. So far, no one has been able to prove it or
+# disprove it! (A conjecture is a statement that might be true, but nobody knows for sure.)
+
 def collatz(n):
     iterations = 0
     while n != 1:

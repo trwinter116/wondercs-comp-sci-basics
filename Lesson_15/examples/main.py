@@ -3,18 +3,14 @@
 class Point:
     """ Point class represents and manipulates x,y coords. """
 
-    def __init__(self, x=0, y=0):
+    def __init__(self):
         """ Create a new point at the origin """
-        self.x = x
-        self.y = y
+        self.x = 0
+        self.y = 0
 
     # Part 3 implement distance from origin method
-    def distance_from_origin(self):
-        return ((self.x)**2 + (self.y)**2)**0.5
 
     # Part 4 implement __str__ method
-
-
 
     # Part 6 implement midpoint as halfway method
 
